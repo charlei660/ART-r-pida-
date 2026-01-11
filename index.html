@@ -9,20 +9,20 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f2f4f7;
+  background: #f4f4f4;
   color: #333;
 }
 
 header {
-  background: linear-gradient(135deg, #0b3c5d, #1f6fa5);
+  background: linear-gradient(135deg, #0a3d62, #1e90ff);
   color: white;
-  padding: 60px 20px;
   text-align: center;
+  padding: 60px 20px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 header p {
@@ -32,45 +32,63 @@ header p {
 
 .btn {
   display: inline-block;
-  margin-top: 25px;
-  padding: 16px 28px;
+  margin-top: 20px;
   background: #25d366;
   color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 18px;
-  border-radius: 6px;
   font-weight: bold;
 }
 
 section {
-  max-width: 900px;
-  margin: 40px auto;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.box {
   background: white;
-  padding: 30px;
-  border-radius: 8px;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
-section h2 {
-  color: #0b3c5d;
+.box h2 {
   margin-top: 0;
+  color: #0a3d62;
 }
 
-ul li {
+.servicos li {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
-.highlight {
-  background: #eaf3fb;
-  border-left: 6px solid #1f6fa5;
-  padding: 20px;
+.img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
 footer {
-  background: #0b3c5d;
+  background: #0a3d62;
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  font-size: 14px;
+}
+
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
 }
 </style>
 </head>
@@ -79,42 +97,51 @@ footer {
 
 <header>
   <h1>ART Rápida</h1>
-  <p>Engenheiro Civil • Emissão de ART Online em Todo o Brasil</p>
-  <a class="btn" href="https://wa.me/5511983316372">Solicitar ART pelo WhatsApp</a>
+  <p>Engenheiro Civil • Emissão de ART Online</p>
+  <a class="btn" href="https://wa.me/5511983316372" target="_blank">
+    Solicitar ART pelo WhatsApp
+  </a>
 </header>
 
 <section>
-  <h2>O que é ART?</h2>
-  <p>
-    A Anotação de Responsabilidade Técnica (ART) identifica o engenheiro responsável
-    por um serviço técnico, conforme exigência do CREA.
-  </p>
+
+  <div class="box">
+    <h2>O que é ART?</h2>
+    <p>
+      A ART (Anotação de Responsabilidade Técnica) identifica o engenheiro
+      responsável por um serviço técnico, conforme exigência do CREA.
+    </p>
+    <img class="img" src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" alt="Engenharia civil">
+  </div>
+
+  <div class="box">
+    <h2>Serviços com ART</h2>
+    <ul class="servicos">
+      <li>✔ ART para Gesso e Drywall</li>
+      <li>✔ ART para Elétrica Residencial</li>
+      <li>✔ ART para Pintura e Reforma Leve</li>
+      <li>✔ ART para Regularização</li>
+      <li>✔ ART de Prestação de Serviço Técnico</li>
+    </ul>
+    <img class="img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Reforma">
+  </div>
+
+  <div class="box">
+    <h2>Atendimento</h2>
+    <p>
+      ✔ Atendimento 100% remoto<br>
+      ✔ Dentro das normas do CREA<br>
+      ✔ Rápido, simples e seguro
+    </p>
+    <img class="img" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Atendimento técnico">
+  </div>
+
 </section>
 
-<section class="highlight">
-  <h2>Serviços com ART</h2>
-  <ul>
-    <li>ART para Gesso e Drywall</li>
-    <li>ART para Elétrica Residencial</li>
-    <li>ART para Reforma e Regularização</li>
-    <li>ART de Prestação de Serviço Técnico</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Atendimento Rápido e Remoto</h2>
-  <p>
-    Atendimento online, sem burocracia, dentro das normas do CREA.
-    Ideal para reformas, síndicos, prestadores de serviço e condomínios.
-  </p>
-</section>
-
-<section style="text-align:center;">
-  <a class="btn" href="https://wa.me/5511983316372">Falar agora no WhatsApp</a>
-</section>
+<a class="whatsapp-fixo" href="https://wa.me/5511983316372" target="_blank">💬</a>
 
 <footer>
-  Responsabilidade Técnica conforme CREA • © ART Rápida
+  Responsabilidade Técnica conforme CREA • ART Rápida
 </footer>
 
 </body>
